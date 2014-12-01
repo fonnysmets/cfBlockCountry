@@ -1,6 +1,6 @@
 <?php
 /**
-* @version		cfBlockCountry.php  1.0.1
+* @version		cfBlockCountry.php  1.0.2
 * @package		Joomla
 * @copyright	Copyright (C) 2014
 * The code has been written by www.CodeFire.in in case of any questions please contact joomla@codefire.in
@@ -57,8 +57,8 @@ class  plgSystemCFBlockCountry extends JPlugin
 
     
     function getCountryCodeByIP(){
-        require(JPATH_LIBRARIES.'/geoip/geoip.inc');
-        $gi = geoip_open(JPATH_LIBRARIES."/geoip/GeoIP.dat",GEOIP_STANDARD);
+        require(dirname(__FILE__).'/geoip/geoip.inc');
+        $gi = geoip_open(dirname(__FILE__)."/geoip/GeoIP.dat",GEOIP_STANDARD);
         $country = array();
         //bug fixed 30 June 2010
         //$country['code'] = geoip_country_code_by_addr($gi, $_SERVER['REMOTE_ADDR']);

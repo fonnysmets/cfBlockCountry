@@ -14,6 +14,7 @@
 		<filename plugin="CFBlockCountry">CFBlockCountry.php</filename>
 		<filename plugin="CFBlockCountry">CFBlockCountry.xml</filename>
 		<filename plugin="CFBlockCountry">index.html</filename>
+		<folder>geoip</folder>
 	</files>
 	<config>
 		<fields name="params">
